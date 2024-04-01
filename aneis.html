@@ -3,11 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colares</title>
+  <title>Aneis</title>
   <style>
-  
+    body {
+      text-align: center; 
+    }
+    .aneis {
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
     .anel {
-      display: inline-block;
       width: 200px;
       margin: 10px;
       text-align: center;
@@ -15,35 +21,52 @@
     .descricao {
       font-weight: bold;
     }
+    button, .button-link {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+    button:hover, .button-link:hover {
+      background-color: #333333;
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" width="60%">
   <h1>Aneis</h1>
-  <div class="anel">
-    <img src="anel1.webp" alt="Anel personalizado" width="150">
-    <p><span class="descricao">Anel</span> - <span class="preco">R$ 29,99</span></p>
-    <p>Descrição: Anel prata.</p>
+  <div class="aneis">
+    <div class="anel">
+      <img src="anel1.webp" alt="Anel personalizado" width="150">
+      <p><span class="descricao">Anel</span> - <span class="preco">R$ 29,99</span></p>
+      <p>Descrição: Anel prata.</p>
+    </div>
+    <div class="anel">
+      <img src="anel2.jpg" alt="Anel personalizado" width="150">
+      <p><span class="descricao">Anel</span> - <span class="preco">R$ 59,99</span></p>
+      <p>Descrição: Anel prata.</p>
+    </div>
+    <div class="anel">
+      <img src="anel3.webp" alt="anel personalizado" width="150">
+      <p><span class="descricao">Anel</span> - <span class="preco">R$ 29,99</span></p>
+      <p>Descrição: Anel prata.</p>
+    </div>
+    <div class="anel">
+      <img src="anel4.jpg" alt="anel personalizado" width="150">
+      <p><span class="descricao">Anel</span> - <span class="preco">R$ 49,99</span></p>
+      <p>Descrição: Anel dourado.</p>
+    </div>
+    <div class="anel">
+      <img src="anel5.jpg" alt="Anel personalizado" width="150">
+      <p><span class="descricao">Anel</span> - <span class="preco">R$ 49,99</span></p>
+      <p>Descrição: Anel dourado.</p> 
+    </div>
   </div>
-  <div class="anel">
-    <img src="anel2.jpg" alt="Anel personalizado" width="150">
-    <p><span class="descricao">Anel</span> - <span class="preco">R$ 59,99</span></p>
-    <p>Descrição: Anel prata.</p>
-  </div>
-  <div class="anel">
-    <img src="anel3.webp" alt="anel personalizado" width="150">
-    <p><span class="descricao">Anel</span> - <span class="preco">R$ 29,99</span></p>
-    <p>Descrição: Anel prata.</p>
-  </div>
-  <div class="anel">
-    <img src="anel4.jpg" alt="anel personalizado" width="150">
-    <p><span class="descricao">Anel</span> - <span class="preco">R$ 49,99</span></p>
-    <p>Descrição: Anel dourado.</p>
-  </div>
-  <div class="anel">
-    <img src="anel5.jpg" alt="Anel personalizado" width="150">
-    <p><span class="descricao">Anel</span> - <span class="preco">R$ 49,99</span></p>
-    <p>Descrição: Anel dourado.</p> 
-  </div>
+</div>
+<br>
+<a href="index.html" class="button-link">Voltar</a>
 </body>
 </html>

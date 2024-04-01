@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pulseiras</title>
   <style>
+    body {
+      text-align: center; 
+    }
+    .pulseira-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .pulseira {
-      display: inline-block; /* Altera o layout para inline-block */
       width: 200px;
       margin: 10px;
       text-align: center;
@@ -14,35 +21,58 @@
     .descricao {
       font-weight: bold;
     }
+    .imagens-pulseiras {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    button, .button-link {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+    button:hover, .button-link:hover {
+      background-color: #333333;
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" width="60%">
   <h1>Pulseiras</h1>
-  <div class="pulseira">
-    <img src="pulseira1.jpg" alt="Pulseira personalizada" width="150">
-    <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 49,99</span></p>
-    <p>Descrição: Pulseira dourada com pingente.</p>
+  <div class="pulseira-container">
+    <div class="imagens-pulseiras">
+      <div class="pulseira">
+        <img src="pulseira1.jpg" alt="Pulseira personalizada" width="150">
+        <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 49,99</span></p>
+        <p>Descrição: Pulseira dourada com pingente.</p>
+      </div>
+      <div class="pulseira">
+        <img src="pulseira2.jpg" alt="Pulseira personalizada" width="150">
+        <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
+        <p>Descrição: Pulseira dourada simples.</p>
+      </div>
+      <div class="pulseira"><br><br>
+        <img src="pulseira3.jpg" alt="Pulseira personalizada" width="165">
+        <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
+        <p>Descrição: Pulseira de pedras prateada.</p>
+      </div>
+      <div class="pulseira">
+        <img src="pulseira4.webp" alt="Pulseira personalizada" width="150">
+        <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
+        <p>Descrição: Pulseira de prata simples.</p>
+      </div>
+      <div class="pulseira">
+        <img src="pulseira5.webp" alt="Pulseira personalizada" width="150">
+        <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 59,99</span></p>
+        <p>Descrição: Pulseira dourada com pedras.</p> 
+      </div>
+    </div>
   </div>
-  <div class="pulseira">
-    <img src="pulseira2.jpg" alt="Pulseira personalizada" width="150">
-    <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
-    <p>Descrição: Pulseira dourada simples.</p>
-  </div>
-  <div class="pulseira">
-    <img src="pulseira3.jpg" alt="Pulseira personalizada" width="160">
-    <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
-    <p>Descrição: Pulseira de pedras prateada.</p>
-  </div>
-  <div class="pulseira">
-    <img src="pulseira4.webp" alt="Pulseira personalizada" width="150">
-    <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 39,99</span></p>
-    <p>Descrição: Pulseira de prata simples.</p>
-  </div>
-  <div class="pulseira">
-    <img src="pulseira5.webp" alt="Pulseira personalizada" width="150">
-    <p><span class="descricao">Pulseira</span> - <span class="preco">R$ 59,99</span></p>
-    <p>Descrição: Pulseira dourada com pedras.</p>
-  </div>
+  <br>
+  <a href="index.html" class="button-link">Voltar</a>
 </body>
 </html>

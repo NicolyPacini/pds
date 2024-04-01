@@ -5,9 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colares</title>
   <style>
-  
+   body {
+      text-align: center; 
+    }
+    .colares-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .colar {
-      display: inline-block;
+      display: inline-block; 
       width: 200px;
       margin: 10px;
       text-align: center;
@@ -15,35 +22,52 @@
     .descricao {
       font-weight: bold;
     }
+    button, .button-link {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+    button:hover, .button-link:hover {
+      background-color: #333333;
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" width="60%">
   <h1>Colares</h1>
-  <div class="colar">
-    <img src="colar2.jpg" alt="Colar personalizado" width="150">
-    <p><span class="descricao">Colar</span> - <span class="preco">R$ 49,99</span></p>
-    <p>Descrição: Colar dourado com pedras.</p>
+  <div class="colares-container">
+    <div class="colar">
+      <img src="Colar2.jpg" alt="Colar personalizado" width="150">
+      <p><span class="descricao">Colar</span> - <span class="preco">R$ 49,99</span></p>
+      <p>Descrição: Colar dourado com pedras.</p>
+    </div>
+    <div class="colar">
+      <img src="Colar3.jpg" alt="Colar personalizado" width="150">
+      <p><span class="descricao">Colar</span> - <span class="preco">R$ 59,99</span></p>
+      <p>Descrição: Colar dourado com pedras.</p>
+    </div>
+    <div class="colar">
+      <img src="Colar4.jpg" alt="Colar personalizado" width="150">
+      <p><span class="descricao">Colar</span> - <span class="preco">R$ 39,99</span></p>
+      <p>Descrição: Colar com pedras brancas.</p>
+    </div>
+    <div class="colar">
+      <img src="Colar5.jpg" alt="Colar personalizado" width="150">
+      <p><span class="descricao">Colar</span> - <span class="preco">R$ 59,99</span></p>
+      <p>Descrição: Colar com pedras rosas.</p>
+    </div>
+    <div class="colar">
+      <img src="Colar6.jpg" alt="Colar personalizado" width="150">
+      <p><span class="descricao">Colar</span> - <span class="preco">R$ 49,99</span></p>
+      <p>Descrição: Colar com pedras azuis.</p> 
+    </div>
   </div>
-  <div class="colar">
-    <img src="Colar3.jpg" alt="Colar personalizado" width="150">
-    <p><span class="descricao">Colar</span> - <span class="preco">R$ 59,99</span></p>
-    <p>Descrição: Colar dourado com pedras.</p>
-  </div>
-  <div class="colar">
-    <img src="colar4.jpg" alt="Colar personalizado" width="150">
-    <p><span class="descricao">Colar</span> - <span class="preco">R$ 39,99</span></p>
-    <p>Descrição: Colar com pedras brancas.</p>
-  </div>
-  <div class="colar">
-    <img src="colar5.jpg" alt="Colar personalizado" width="150">
-    <p><span class="descricao">Colar</span> - <span class="preco">R$ 59,99</span></p>
-    <p>Descrição: Colar com pedras rosas.</p>
-  </div>
-  <div class="colar">
-    <img src="colar6.jpg" alt="Colar personalizado" width="150">
-    <p><span class="descricao">Colar</span> - <span class="preco">R$ 49,99</span></p>
-    <p>Descrição: Colar com pedras azuis.</p> 
-  </div>
+</div>
+<br>
+<a href="index.html" class="button-link">Voltar</a>
 </body>
 </html>

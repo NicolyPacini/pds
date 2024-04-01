@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -31,17 +32,19 @@
     input[type="checkbox"] {
       margin-right: 5px;
     }
-    button {
+    button, .button-link {
       background-color: #000000;
       color: white;
       padding: 10px 20px;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      float: right;
+      text-decoration: none; 
+      display: inline-block; 
+      text-align: center;
     }
-    button:hover {
-      background-color: #000000;
+    button:hover, .button-link:hover {
+      background-color: #333333;
     }
   </style>
 </head>
@@ -65,6 +68,7 @@
     <label for="copia">Enviar uma cópia para mim</label>
     
     <button type="submit">Enviar Mensagem</button>
+    <a href="index.html" class="button-link">Voltar</a>
   </form>
 </body>
 </html>

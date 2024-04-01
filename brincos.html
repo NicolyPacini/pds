@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brincos</title>
   <style>
+    body {
+      text-align: center; 
+    }
+    .brincos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+    }
     .brinco {
-      display: inline-block; /* Altera o layout para inline-block */
       width: 200px;
       margin: 10px;
       text-align: center;
@@ -14,35 +21,52 @@
     .descricao {
       font-weight: bold;
     }
+    button, .button-link {
+      background-color: #000000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none; 
+    }
+    button:hover, .button-link:hover {
+      background-color: #333333;
+    }
   </style>
 </head>
 <body>
   <img src="logo.png" width="60%">
   <h1>Brincos</h1>
-  <div class="brinco">
-    <img src="brinco1.webp" alt="Brinco personalizado" width="150">
-    <p><span class="descricao">Brinco</span> - <span class="preco">R$ 29,99</span></p>
-    <p>Descrição: Brinco de argola prata.</p>
+  <div class="brincos">
+    <div class="brinco">
+      <img src="brinco1.webp" alt="Brinco personalizado" width="150">
+      <p><span class="descricao">Brinco</span> - <span class="preco">R$ 29,99</span></p>
+      <p>Descrição: Brinco de argola prata.</p>
+    </div>
+    <div class="brinco">
+      <img src="brinco2.jpg" alt="Brinco personalizado" width="120">
+      <p><span class="descricao">Brinco</span> - <span class="preco">R$ 29,99</span></p>
+      <p>Descrição: Brinco de argola dourada.</p>
+    </div>
+    <div class="brinco">
+      <img src="brinco3.jpg" alt="Brinco personalizado" width="160">
+      <p><span class="descricao">Brinco</span> - <span class="preco">R$ 39,99</span></p>
+      <p>Descrição: Brinco de argola com pedras.</p>
+    </div>
+    <div class="brinco">
+      <img src="brinco4.webp" alt="Brinco personalizado" width="150">
+      <p><span class="descricao">Brinco</span> - <span class="preco">R$ 19,99</span></p>
+      <p>Descrição: Brinco prateado simples.</p>
+    </div>
+    <div class="brinco">
+      <img src="brinco5.png" alt="Brinco personalizado" width="150">
+      <p><span class="descricao">Brinco</span> - <span class="preco">R$ 19,99</span></p>
+      <p>Descrição: Brinco de borboleta dourado.</p>
+    </div>
   </div>
-  <div class="brinco">
-    <img src="brinco2.jpg" alt="Brinco personalizado" width="150">
-    <p><span class="descricao">Brinco</span> - <span class="preco">R$ 29,99</span></p>
-    <p>Descrição: Brinco de argola dourada.</p>
-  </div>
-  <div class="brinco">
-    <img src="brinco3.jpg" alt="Brinco personalizado" width="160">
-    <p><span class="descricao">Brinco</span> - <span class="preco">R$ 39,99</span></p>
-    <p>Descrição: Brinco de argola com pedras.</p>
-  </div>
-  <div class="brinco">
-    <img src="brinco4.webp" alt="Brinco personalizado" width="150">
-    <p><span class="descricao">Brinco</span> - <span class="preco">R$ 19,99</span></p>
-    <p>Descrição: Brinco prateado simples.</p>
-  </div>
-  <div class="brinco">
-    <img src="brinco5.png" alt="Brinco personalizado" width="150">
-    <p><span class="descricao">Brinco</span> - <span class="preco">R$ 19,99</span></p>
-    <p>Descrição: Brinco de borboleta dourado.</p>
-  </div>
+</div>
+<br>
+<a href="index.html" class="button-link">Voltar</a>
 </body>
 </html>
